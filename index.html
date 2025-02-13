@@ -1,0 +1,409 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+
+    <title>Anca Irimia</title>
+
+
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+
+
+
+
+
+
+    <style>
+        /* Background Image with semi-transparent overlay */
+        body {
+            position: relative;
+            background: url('images/flori-verzi.jpg') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.6);
+            /* Semi-transparent overlay */
+            z-index: -1;
+        }
+
+        /* Sidebar Styles */
+        #sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 250px;
+            height: 100%;
+            background-color: rgb(2, 57, 22);
+            color: rgb(255, 255, 255);
+            padding-top: 20px;
+            z-index: 1000;
+        }
+
+        #sidebar header {
+            text-align: left;
+        }
+
+        #sidebar .logo {
+            color: rgb(245, 245, 245);
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        #sidebar nav ul {
+            padding-left: 0;
+            list-style-type: none;
+        }
+
+        /* Remove border-bottom from all links inside the sidebar */
+        #sidebar nav ul li a {
+            border-bottom: none !important;
+            /* Ensure the style is enforced */
+        }
+
+        /* Additional rule to override global anchor styling */
+        #sidebar a {
+            border-bottom: none !important;
+            /* Completely remove dotted lines */
+            text-decoration: none !important;
+        }
+
+        #sidebar a {
+            border-bottom: none !important;
+            text-decoration: none !important;
+        }
+
+        #sidebar a {
+            border-bottom: none !important;
+            text-decoration: none !important;
+        }
+
+
+        #sidebar nav ul li {
+            border-bottom: none;
+        }
+
+        #sidebar nav ul li a {
+            display: block;
+            padding: 12px 20px;
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        #sidebar nav ul li a:hover {
+            background-color: #ffffff;
+            color: #022604;
+        }
+
+        #sidebar .icons {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #sidebar .icons li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        #sidebar .icons li a {
+            color: rgb(218, 220, 229);
+            font-size: 24px;
+            text-decoration: none;
+        }
+
+
+        /* Main Content Styles */
+        #main {
+            margin - left: 260px;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+
+
+        /* Banner Section */
+        #banner {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        #banner img {
+            width: 100%;
+            max-width: 780px;
+            height: auto;
+            border: none;
+            margin: 0 auto;
+            object-fit: contain;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(23, 193, 215, 0.1);
+        }
+
+        /* Centering the image */
+        .image.object {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        /* Responsive Layout for Smaller Screens */
+        @media (max-width: 768px) {
+            #sidebar {
+                position: relative;
+                width: 100%;
+                height: auto;
+            }
+
+            #sidebar nav ul li a {
+                padding: 8px;
+                font-size: 10px;
+            }
+
+            #main {
+                margin - left: 0;
+                margin-top: 20px;
+            }
+
+            #banner img {
+                height: auto;
+            }
+        }
+
+        <style>
+        /* Elegant Fonts
+                @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Lora:wght@600&display=swap');*/
+
+        .main-title {
+            font-family: 'Lucida Calligraphy', cursive;
+            font - size: 25rem;
+            color: #9f0e30;
+            font-weight: 700;
+            text-align: center;
+            padding-left: 20px;
+            margin-bottom: 15px;
+            letter-spacing: 0.4px;
+            line-height: 1.2;
+            /*font-family: 'Cormorant Garamond', arial;*/
+            font-size: 7.8rem;
+        }
+
+        .subtitle {
+            font - family: Georgia, serif;
+            /*font-family: 'Cormorant Garamond', arial;*/
+            font-size: 1.1rem;
+            color: #053205;
+            font-weight: 500;
+            margin-top: 70px;
+            letter-spacing: 0.4px;
+            margin-left: 0;
+            /*font-family: 'Lucida Calligraphy', cursive;*/
+
+        }
+    </style>
+    </style>
+</head>
+
+<body class="is-preload">
+    <title>Visitor Counter</title>
+    <style>
+        /*.counter-number {
+            font-size: 24px;
+            color: #fff;
+            background-color: #87b6e8;
+            padding: 5px;
+            text-align: center;
+            border-radius: 8px;
+            width: 50px;
+            margin: 20px auto;*/
+        }
+    </style>
+    </head>
+
+    <body>
+
+
+
+        <!-- Wrapper -->
+        <div id="wrapper">
+
+            <!-- Sidebar -->
+            <div id="sidebar">
+                <header id="header">
+                    <a href="index.html" class="logo"><strong>Menu</strong></a>
+                </header>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about_me.html">About me</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="views.html" <span class="counter-number">Loading...</span>Live Views</a></li>
+
+
+                    </ul>
+
+                </nav>
+                <ul class="icons">
+                    <li><a href="https://www.linkedin.com/in/anca-irimia-8343b083/" target="_blank"
+                            class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                    <li><a href="https://github.com/Anca0803" target="_blank" class="icon brands fa-github"><span
+                                class="label">GitHub</span></a></li>
+                    <li><a href="mailto:anca.irimia8@gmail.com" class="icon solid fa-envelope"><span
+                                class="label">Email</span></a></li>
+                </ul>
+
+
+            </div>
+
+            <!-- Main Content -->
+            <div id="main">
+                <!-- Banner -->
+                <section id="banner">
+                    <div class="content">
+                        <header>
+                            <h1 class="main-title">Anca Irimia</h1>
+
+                            <p class="subtitle"><strong id="type-text"></strong></p>
+
+                            <script>
+                                const textToType = "CLOUD ENTHUSIAST | ASPIRING SOLUTIONS ARCHITECT";
+                                let index = 0;
+
+                                function typeWriter() {
+                                    if (index < textToType.length) {
+                                        document.getElementById("type-text").textContent += textToType.charAt(index);
+                                        index++;
+                                        setTimeout(typeWriter, 40); // Adjust typing speed here (milliseconds)
+                                    }
+                                }
+
+                                // Start typing when the page loads
+                                window.onload = typeWriter;
+                            </script>
+
+
+
+
+                        </header>
+                    </div>
+                    <span class="anca">
+                        <img src="images/mergedimage.jpg" alt="Profile Image">
+                    </span>
+                    <ul class="actions">
+                        <li><a href="mailto:anca.irimia8@gmail.com" class="button big">Let's connect</a></li>
+                    </ul>
+                </section>
+
+            </div>
+
+        </div>
+
+
+        <footer>
+            <p>Anca Irimia &copy; All rights reserved</p>
+        </footer>
+
+        </footer>
+
+        <style>
+            footer {
+                font - family: Georgia;
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+                height: 60px;
+                /* Adjust height as needed */
+                color: #103121;
+                /* Same text color as body */
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                /* Moves text slightly down */
+                font-size: 15px;
+                padding-bottom: 1px;
+                /* Extra padding for lower placement */
+
+                /* Apply the same background as body */
+                background: url('images/flori-verzi.jpg') no-repeat center center fixed;
+                background-size: cover;
+
+                /* Same transparency overlay effect */
+                position: fixed;
+                border-top: 2px solid white;
+                line-height: 60px;
+
+                /* Helps push text lower */
+
+            }
+
+            footer::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(255, 255, 255, 0.6);
+                line-height: 60px;
+
+                /* Semi-transparent overlay */
+            }
+
+            footer p {
+                position: relative;
+
+                /* Ensures text is above the overlay */
+                z-index: 1;
+            }
+        </style>
+
+
+
+
+
+
+        <!--Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script src="/index.js"></script>
+
+
+
+
+
+    </body>
+
+
+<<<<<<< HEAD:AWS_Cloud_Resume/Anca Irimia Cloud Resume Challenge/index.html
+</html>
+=======
+</html>
+>>>>>>> f4fe2df (Updated CI/CD workflow YAML file):index.html

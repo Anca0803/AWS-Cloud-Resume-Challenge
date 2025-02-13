@@ -1,0 +1,72 @@
+///
+/// Editorial by HTML5 UP
+/// html5up.net | @ajlkn
+/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+///
+
+/* Banner */
+
+#banner {
+	@include padding(6em, 0);
+	@include vendor('display', 'flex');
+
+	h1 {
+		margin-top: -0.125em;
+	}
+
+	.content {
+		@include vendor('flex-grow', '1');
+		@include vendor('flex-shrink', '1');
+		width: 100%;
+	}
+
+	.image {
+		display: flex;
+		align-items: center;
+		/* Centers the image vertically */
+		justify-content: center;
+		/* Centers the image horizontally */
+		width: 100%;
+		/* You can change this if you want the image to take a larger or smaller part of the container */
+
+
+		img {
+			width: 100%;
+			// You can change this value to make the image bigger or smaller
+			height: auto; // Keeps the aspect ratio
+			margin-top: 20px;
+		}
+	}
+
+	@include orientation(portrait) {
+		@include vendor('flex-direction', 'column-reverse');
+
+		h1 {
+			br {
+				display: none;
+			}
+		}
+
+		.content {
+			@include vendor('flex-grow', '0');
+			@include vendor('flex-shrink', '0');
+			width: 100%;
+		}
+
+		.image {
+			@include vendor('flex-grow', '0');
+			@include vendor('flex-shrink', '0');
+			margin: 0 0 (_size(element-margin) * 2) 0;
+			height: 25em;
+			max-height: 50vh;
+			min-height: 18em;
+			width: 100%;
+		}
+
+		@include breakpoint('<=xsmall') {
+			.image {
+				max-height: 35vh;
+			}
+		}
+	}
+}

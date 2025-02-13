@@ -1,0 +1,423 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <title>About Me</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+        /* Background Image with semi-transparent overlay */
+        body {
+            position: relative;
+            background: url('images/flori-verzi.jpg') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.6);
+            /* Semi-transparent overlay */
+            z-index: -1;
+        }
+
+        /* Sidebar Styles */
+        #sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 250px;
+            height: 100%;
+            background-color: rgb(2, 57, 22);
+            color: rgb(255, 255, 255);
+            padding-top: 20px;
+            z-index: 1000;
+        }
+
+        #sidebar header {
+            text-align: left;
+        }
+
+        #sidebar .logo {
+            color: rgb(245, 245, 245);
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        #sidebar nav ul {
+            padding-left: 0;
+            list-style-type: none;
+        }
+
+        /* Remove border-bottom from all links inside the sidebar */
+        #sidebar nav ul li a {
+            border-bottom: none !important;
+            /* Ensure the style is enforced */
+        }
+
+        /* Additional rule to override global anchor styling */
+        #sidebar a {
+            border-bottom: none !important;
+            /* Completely remove dotted lines */
+            text-decoration: none !important;
+        }
+
+        #sidebar a {
+            border-bottom: none !important;
+            text-decoration: none !important;
+        }
+
+        #sidebar a {
+            border-bottom: none !important;
+            text-decoration: none !important;
+        }
+
+
+        #sidebar nav ul li {
+            border-bottom: none;
+        }
+
+        #sidebar nav ul li a {
+            display: block;
+            padding: 12px 20px;
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        #sidebar nav ul li a:hover {
+            background-color: #ffffff;
+            color: #022604;
+        }
+
+        #sidebar .icons {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #sidebar .icons li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        #sidebar .icons li a {
+            color: rgb(218, 220, 229);
+            font-size: 24px;
+            text-decoration: none;
+        }
+
+
+        /* Background Image */
+        body {
+            background: url('images/flori-verzi.jpg') no-repeat center center fixed;
+
+            background-size: cover;
+            /* Ensures the image fills the entire screen */
+            background-position: center;
+            /* Centers the image */
+            background-attachment: fixed;
+            /* Keeps the image fixed while scrolling */
+            background-repeat: no-repeat;
+            /* Prevents the image from repeating */
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            color: #062206;
+        }
+
+        /* Main Content Styles */
+        #main {
+            margin-left: 260px;
+            padding: 40px;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        /* Fixed Title Section */
+        .fixed-title {
+            position: fixed;
+            top: 0;
+            left: 300px;
+            /* Matches the sidebar offset */
+            width: 100%;
+            /* Matches the width used by the content container */
+            max-width: 900px;
+            /* Maximum width to align with the experience box */
+            background-color: #ffffff !important;
+            padding: 10px 20px;
+            z-index: 1100;
+            box-shadow: 0 4px 10px rgba(8, 212, 93, 0.1);
+            border-bottom: 1px solid #ddd;
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #123000;
+            border-radius: 8px;
+        }
+
+        .content-container {
+            margin-top: 80px;
+            max-width: 900px;
+            width: 100%;
+            background: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            font-family: Arial, sans-serif;
+        }
+
+        h3,
+        h4 {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        ul {
+            margin-top: 10px;
+            padding-left: 20px;
+            line-height: 1.6;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        linkuri {
+            color: #0a3703;
+            text-decoration: underline;
+        }
+
+        a {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body class="is-preload">
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar">
+            <header id="header">
+                <a href="index.html" class="logo"><strong>Menu</strong></a>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about_me.html">About me</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="views.html" <span class="counter-number">Loading...</span>Live Views</a></li>
+
+
+                </ul>
+            </nav>
+            <ul class="icons">
+                <li><a href="https://www.linkedin.com/in/anca-irimia-8343b083/" target="_blank"
+                        class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                <li><a href="https://github.com/Anca0803" target="_blank" class="icon brands fa-github"><span
+                            class="label">GitHub</span></a></li>
+                <li><a href="mailto:anca.irimia8@gmail.com" class="icon solid fa-envelope"><span
+                            class="label">Email</span></a></li>
+            </ul>
+        </div>
+
+
+        <!-- Fixed Title -->
+        <div class="fixed-title">
+
+            Resume
+        </div>
+
+
+
+        <!-- Main Content -->
+        <div id="main">
+            <div class="content-container">
+                <section>
+
+
+                    <h3><strong>Experience</strong></h3>
+                    <h4>Sales Administrator - Native Instruments (11/2018 - Present)</h4>
+                    <ul>
+                        <li>Successfully led and automated various key projects within Sales and KAOM
+                            departments,
+                            improving
+                            team efficiency by 60%.</li>
+                        <li>I designed and programmed a <a href="https://plm-hub-dev.ni.team/" target="_blank"
+                                class="linkuri">homepage</a> for the HW Service Portal, making it easier to
+                            access the
+                            right service portal for NI products, supporting the repair process, enhancing
+                            customer
+                            care, and simplifying spare part searches.</li>
+                        <li>Automated executive reports and stock management, reducing manual tasks by 30% and
+                            increasing the precision of forecasting.</li>
+                        <li>Automated critical processes, including executive reports and stock management,
+                            leading to a
+                            30% reduction in time spent on manual tasks and improving accuracy in forecasting.
+                        </li>
+                        <li>Implement automation for demand planning, price setup, competitors’ prices and
+                            campaign
+                            revenue.</li>
+                        <li>Increased customer satisfaction from 70% to 95% by ensuring customers received their
+                            OEM
+                            serials quickly and accurately, improving their overall experience with our service.
+                        </li>
+                    </ul>
+
+                    <h4>Sales Analyst - Michelin (UK region) (03/2015 – 10/2018)</h4>
+                    <ul>
+                        <li>Managed commercial conditions and pricing based on contractual agreements.</li>
+                        <li>Constantly exceeded 15% above monthly targets by controlling the accuracy of the
+                            payments,
+                            commercial conditions and prices.</li>
+                        <li>Improved customer satisfaction from 90% to 96% by resolving claims efficiently.</li>
+                        <li>Maintained an average KPI score of 90% and achieved 95% success in internal
+                            controls.</li>
+                        <li>I decreased company's costs by actively being involved in HR process, acquiring
+                            highly
+                            professional team-members.</li>
+                    </ul>
+                    <h4>Receptionist - West Plaza Hotel (09/2012 – 02/2015)</h4>
+                    <ul>
+                        <li>Successfully managed guest services, prioritizing excellent customer service.</li>
+                        <li>Resolved guest issues efficiently, using active listening and problem-solving
+                            skills.</li>
+                        <li>Played a key role in organizing and promoting hotel services while collaborating
+                            with
+                            other departments.</li>
+                    </ul>
+
+                    <h4>Consultant in Management and Marketing - C'est Toi Jeans (10/2013 – 05/2014)</h4>
+                    <ul>
+                        <li>Created the design of a comprehensive Customer Loyalty Program centered around a
+                            Points
+                            Awards System.</li>
+                        <li>Conducted thorough analysis to evaluate the anticipated profitability and risk
+                            factors
+                            associated with the implementation of the new loyalty program.</li>
+                        <li>Introduced fresh ideas to draw in new customers for the loyalty program, boosting
+                            both their
+                            interest and long-term connection with the brand.</li>
+                    </ul>
+
+                    <h4>Retail Sales Consultant - Romanian Commercial Bank (Erste Group) (01/2010 – 01/2012)
+                    </h4>
+                    <ul>
+                        <li>Consistently exceeded sales targets, achieving 120% of goals for 5 consecutive
+                            months
+                            through effective cross-selling of Group products.</li>
+                        <li>Delivered exceptional customer service, building strong relationships through
+                            professional,
+                            attentive interactions and expert pre- and post-sales advice.</li>
+                        <li>Demonstrated proficiency in banking software and digital tools to enhance customer
+                            experience.</li>
+                        <li>Contributed to the bank's high reputation by maintaining strict compliance with
+                            financial
+                            regulations and security protocols.</li>
+                    </ul>
+
+                    <h3><strong>Education</strong></h3>
+                    <ul>
+                        <li>Master of Business Administration – Alexandru Ioan Cuza University, Iași</li>
+                        <li>Bachelor's in Banking, Corporate Finance – Alexandru Ioan Cuza University, Iași</li>
+                        <li>Master's in Management and Marketing in Tourism – Academy of Economic Studies,
+                            Bucharest
+                        </li>
+                    </ul>
+
+                    <h3><strong>Certifications</strong></h3>
+                    <ul>
+                        <li>AWS Solution Architect Training – <a href="https://learn.cantrill.io" target="_blank"
+                                class="linkuri">Cantrill.io</a> (actively studying)</li>
+                        <li>Completed Certifications and Master degrees can be found <a href="#">here</a></li>
+                    </ul>
+
+                    <h3><strong>Skills</strong></h3>
+                    <h4>Cloud and DevOps Technologies</h4>
+                    <ul>
+                        <li>AWS (main focus)</li>
+                        <li>Azure</li>
+                        <li>Google Cloud</li>
+                        <li>Kubernetes</li>
+                        <li>Docker</li>
+                    </ul>
+
+                    <h4>Web Development</h4>
+                    <ul>
+                        <li>Python</li>
+                        <li>Bash</li>
+                        <li>SQL</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Bootstrap</li>
+                        <li>Django</li>
+                    </ul>
+
+                    <h4>Operating Systems and Networking</h4>
+                    <ul>
+                        <li>Linux</li>
+                        <li>Networking</li>
+
+                    </ul>
+                    <h4>Tools and Platforms</h4>
+                    <ul>
+                        <li>Google Sheets expert</li>
+                        <li>Microsoft Office</li>
+                        <li>Confluence</li>
+                        <li>SDBS</li>
+                        <li>Zendesk</li>
+                        <li>Oracle EBS</li>
+                        <li>Zendesk</li>
+                        <li>QlikView/QlikSense</li>
+                        <li>Fidelio</li>
+                        <li>Michelin Softwares</li>
+                        <li>IDL</li>
+                    </ul>
+                    <h4>Soft Skills</h4>
+                    <ul>
+                        <li>Customer service</li>
+                        <li>Problem solving</li>
+                        <li>Analytical thinking</li>
+                        <li>Time management</li>
+                        <li>Initiative</li>
+                        <li>Strong communication</li>
+                        <li>Teamwork</li>
+                        <li>Active listening</li>
+                        <li>Leadership</li>
+                        <li>Empathy</li>
+
+                    </ul>
+                    <h3><strong>Languages</strong></h3>
+                    <ul>
+                        <li>German (B1)</li>
+                        <li>English (C2)</li>
+                        <li>Romanian (Native)</li>
+                        <li>Spanish (A2)</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="/index.js"></script>
+</body>
+
+</html>

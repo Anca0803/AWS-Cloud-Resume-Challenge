@@ -1,0 +1,289 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <title>About Me</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+        /* Background Image with semi-transparent overlay */
+        body {
+            position: relative;
+            background: url('images/flori-verzi.jpg') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.6);
+            /* Semi-transparent overlay */
+            z-index: -1;
+        }
+
+        /* Sidebar Styles */
+        #sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 250px;
+            height: 100%;
+            background-color: rgb(2, 57, 22);
+            color: rgb(255, 255, 255);
+            padding-top: 20px;
+            z-index: 1000;
+        }
+
+        #sidebar header {
+            text-align: left;
+        }
+
+        #sidebar .logo {
+            color: rgb(245, 245, 245);
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        #sidebar nav ul {
+            padding-left: 0;
+            list-style-type: none;
+        }
+
+        /* Remove border-bottom from all links inside the sidebar */
+        #sidebar nav ul li a {
+            border-bottom: none !important;
+            /* Ensure the style is enforced */
+        }
+
+        /* Additional rule to override global anchor styling */
+        #sidebar a {
+            border-bottom: none !important;
+            /* Completely remove dotted lines */
+            text-decoration: none !important;
+        }
+
+        #sidebar a {
+            border-bottom: none !important;
+            text-decoration: none !important;
+        }
+
+        #sidebar a {
+            border-bottom: none !important;
+            text-decoration: none !important;
+        }
+
+
+        #sidebar nav ul li {
+            border-bottom: none;
+        }
+
+        #sidebar nav ul li a {
+            display: block;
+            padding: 12px 20px;
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        #sidebar nav ul li a:hover {
+            background-color: #ffffff;
+            color: #022604;
+        }
+
+        #sidebar .icons {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #sidebar .icons li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        #sidebar .icons li a {
+            color: rgb(218, 220, 229);
+            font-size: 24px;
+            text-decoration: none;
+        }
+
+        /* Background Image */
+        body {
+            background: url('images/flori-verzi.jpg') no-repeat center center fixed;
+
+            background-size: cover;
+            /* Ensures the image fills the entire screen */
+            background-position: center;
+            /* Centers the image */
+            background-attachment: fixed;
+            /* Keeps the image fixed while scrolling */
+            background-repeat: no-repeat;
+            /* Prevents the image from repeating */
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            color: #062206;
+        }
+
+        /* Main Content Styles */
+        #main {
+            margin-left: 260px;
+            padding: 40px;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        /* Fixed Title Section */
+        .fixed-title {
+            position: fixed;
+            top: 0;
+            left: 300px;
+            /* Matches the sidebar offset */
+            width: 100%;
+            /* Matches the width used by the content container */
+            max-width: 900px;
+            /* Maximum width to align with the experience box */
+            background-color: #ffffff !important;
+            padding: 10px 20px;
+            z-index: 1100;
+            box-shadow: 0 4px 10px rgba(8, 212, 93, 0.1);
+            border-bottom: 1px solid #ddd;
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #123000;
+            border-radius: 8px;
+        }
+
+        .content-container {
+            margin-top: 80px;
+            max-width: 900px;
+            width: 100%;
+            background: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            font-family: Arial, sans-serif;
+        }
+
+        h3,
+        h4 {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        ul {
+            margin-top: 10px;
+            padding-left: 20px;
+            line-height: 1.6;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+
+
+        a {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body class="is-preload">
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar">
+            <header id="header">
+                <a href="index.html" class="logo"><strong>Menu</strong></a>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about_me.html">About me</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="views.html" <span class="counter-number">Loading...</span>Live Views</a></li>
+
+
+                </ul>
+            </nav>
+            <ul class="icons">
+                <li><a href="https://www.linkedin.com/in/anca-irimia-8343b083/" target="_blank"
+                        class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                <li><a href="https://github.com/Anca0803" target="_blank" class="icon brands fa-github"><span
+                            class="label">GitHub</span></a></li>
+                <li><a href="mailto:anca.irimia8@gmail.com" class="icon solid fa-envelope"><span
+                            class="label">Email</span></a></li>
+            </ul>
+        </div>
+
+        <!-- Fixed Title -->
+        <div class="fixed-title">
+            About me
+        </div>
+
+        <!-- Main Content -->
+        <div id="main">
+            <div class="content-container">
+                <section>
+
+
+                    <H3><strong>Career goal</strong></H3>
+                    <p>I live in Rostock and work as a Sales Administrator at Native Instruments. During my time here, I
+                        discovered my passion for cloud technologies while automating the various projects I was
+                        involved in.</p>
+                    <p>I’m currently working towards my AWS
+                        Solution Architect
+                        certification to strengthen my skills in cloud architecture.</p>
+                    <p>As a Sales Administrator, I became an expert in automating sales processes to drive efficiency
+                        and improve project management.</p>
+                    <p>I am enthusiatic to transition into <strong>Cloud</strong> roles. I’m confident that my
+                        background in
+                        automation,
+                        self-learning, problem-solving, creativity and data analysis will support my success in this new
+                        career
+                        path.
+                    </p>
+                    <h3><strong>Interests</strong></h3>
+                    <p>On a personal note, I enjoy relaxing with a good book and a big cup of coffee. I love discovering
+                        new places, and I find joy in sharing <a
+                            href="https://www.instagram.com/surprise_notes_official/" target="_blank"
+                            class="linkuri">surprise
+                            notes</a> in my free time.</p>
+                    <p>I’ve always been a fan of notebooks. There’s something about putting pen to paper that helps me
+                        stay grounded and organized. I love writing down my goals, whether they’re long-term dreams or
+                        short-term tasks. It’s like creating a map for my future, one page at a time.</p>
+                    <p>My biggest weakness? I simply love dogs!</p>
+
+
+
+
+
+            </div>
+        </div>
+
+    </div>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="/index.js"></script>
+
+</body>
+
+</html>
