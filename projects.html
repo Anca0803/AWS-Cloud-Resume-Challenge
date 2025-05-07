@@ -2,19 +2,32 @@
 <html lang="en">
 
 <head>
-    <title>Anca Irimia</title>
+    <title>Projects</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/mobile.css" media="screen and (max-width: 768px)">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+
+
+
+    <button class="toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+
     <style>
         /* Background Image with semi-transparent overlay */
         body {
             position: relative;
-            background: url('images/flori-verzi.jpg')no-repeat center center fixed;
+            background: url('/images/flori-verzi.jpg') no-repeat center center fixed;
             background-size: cover;
             margin: 0;
             font-family: 'Arial', sans-serif;
-            color: #333;
+            color: #062206;
         }
 
         body::before {
@@ -88,7 +101,7 @@
 
         #sidebar nav ul li a {
             display: block;
-            padding: 12px 20px;
+            padding: 10px 10px;
             color: rgb(255, 255, 255);
             text-decoration: none;
             font-size: 18px;
@@ -101,20 +114,25 @@
 
         #sidebar .icons {
             position: absolute;
-            bottom: 20px;
-            left: 20px;
+            up: 30px;
+            bottom: 2px;
+            /*aici 19.02.25*/
+            left: 15px;
+            /*aici 19.02.25*/
             list-style-type: none;
             padding: 0;
+            justify-content: center !important;
+            align-items: center !important;
         }
 
         #sidebar .icons li {
             display: inline;
-            margin-right: 10px;
+            margin-right: 5px;
         }
 
-        #sidebar .icons li a {
+        #sidebar li a {
             color: rgb(218, 220, 229);
-            font-size: 24px;
+            font-size: 20px;
             text-decoration: none;
         }
 
@@ -124,31 +142,12 @@
             padding: 40px;
             min-height: 100vh;
             position: relative;
+
         }
 
-        /* Fixed Title Section */
-        .fixed-title {
-            position: fixed;
-            top: 0;
-            left: 300px;
-            /* Matches the sidebar offset */
-            width: 100%;
-            /* Matches the width used by the content container */
-            max-width: 900px;
-            /* Maximum width to align with the experience box */
-            background-color: #ffffff !important;
-            padding: 10px 20px;
-            z-index: 1100;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            border-bottom: 1px solid #ddd;
-            font-size: 1.8rem;
-            font-weight: bold;
-            color: #123000;
-            border-radius: 8px;
-        }
 
         .content-container {
-            margin-top: 80px;
+            margin-top: 10px;
             max-width: 900px;
             width: 100%;
             background: #fff;
@@ -161,7 +160,7 @@
         h3,
         h4 {
             margin-top: 20px;
-            color: #333;
+
         }
 
         ul {
@@ -178,6 +177,13 @@
             color: #ffffff;
             text-decoration: underline;
         }
+
+        nav ul li ul li.sub-item a {
+            font-size: 0.9em;
+            /* slightly smaller, optional */
+            color: #c7e2c2;
+            /* lighter color, optional */
+        }
     </style>
 </head>
 
@@ -193,13 +199,29 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about_me.html">About me</a></li>
                     <li><a href="resume.html">Resume</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <!-- <li><a href="projects.html">Projects</a></li>-->
+                    <li>
+                        <a href="projects.html">Projects</a>
+
+
+                    </li>
+
+
+                    <li><a href="certificates.html">Certificates</a></li>
                     <li><a href="views.html" <span class="counter-number">Loading...</span>Live Views</a></li>
+                    <li><a href="contact.html">Contact</a></li>
 
 
                 </ul>
             </nav>
+
+
+
+
+
+
+
+
             <ul class="icons">
                 <li><a href="https://www.linkedin.com/in/anca-irimia-8343b083/" target="_blank"
                         class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
@@ -220,18 +242,22 @@
                 <section>
 
 
-                    <h3><strong>Cloud Resume Challenge</strong></h3>
-                    <div class="project-item">
+                    <h3><strong><a href="https://anca-irimia.com/" class="linkuri" target="_blank">Cloud Resume
+                                Challenge</strong></a></strong></h3>
+                    <div class="project-details">
                         <p></p>
-                        <p>I successfully completed the <strong><a href="https://anca-irimia.com/" class="linkuri"
-                                    target="_blank">Cloud Resume Challenge</strong></a>,
-                            demonstrating
-                            my expertise in cloud technologies by developing a fully automated, serverless dynamic
-                            resume hosted on AWS.
-                        <p>This project integrates both frontend and backend services,
-                            showcasing Infrastructure as Code (IaC), automation, and cloud-native development.</p>
-                        </p>
+                        <ul>
+                            <li> I successfully completed the <strong>Cloud Resume Challenge</strong></a>,
+                                demonstrating
+                                my expertise in cloud technologies by developing a fully automated, serverless dynamic
+                                resume hosted on AWS.</li>
+                            <li>This project integrates both frontend and backend services,
+                                showcasing Infrastructure as Code (IaC), automation, and cloud-native development.</li>
+
+
+                        </ul>
                         <p><STRONG>Tech-stack:</STRONG></p>
+
                         <ul>
 
                             <li>Amazon S3</span> – used for static
@@ -253,46 +279,73 @@
 
                     </div>
 
-                    <h3><strong>Additional Projects</strong></h3>
-                    <p></p>
-
                     <div class="project-item">
-                        <strong><a href="https://plm-hub-dev.ni.team/" target="_blank" class="linkuri">Hardware Service
-                                Portal for
-                                Native Instruments</a></strong>
+                        <strong>
+                            <h3> <a href="quotes.html" target="_blank" class="linkuri">
+                                    Deploying a Serverless AWS Application </a>
+                            </h3>
+                        </strong>
                         <div class="project-details">
-                            <p>- I designed and programmed a homepage for the HW Service Portal which made it easier to
-                                access the right
-                                service portal for NI products.</p>
-                            <p>- It supports the repair process and enhanced customer care by simplifying spare part
-                                searches for improved
-                                efficiency.</p>
+                            <li>Designed and configured a DynamoDB table with partition/sort keys, auto-scaling, and
+                                encryption.</li>
+                            <li> Developed two AWS Lambda functions to handle quote creation and retrieval,
+                                with IAM roles and environment variables.</li>
+                            <li>Integrated Lambda with Amazon API Gateway, creating RESTful endpoints.</li>
+                            <li>Deployed and tested a serverless API using CloudWatch logging, X-Ray tracing, and
+                                dynamic quote delivery via the invoke URL.</li>
+                            <li><a href="https://github.com/Anca0803/Deploying-a-Serverless-AWS-Application"
+                                    target="_blank" class="linkuri"> Github repository</a></li>
+
+
                         </div>
-                    </div>
 
-                    <div class="project-item">
-                        <strong><a href="https://codepen.io/Anca0803/pens/public" target="_blank"
-                                class="linkuri">FreeCodeCamp
-                                Projects</a></strong>
-                        <div class="project-details">
-                            <p>- I created web development projects showcasing front-end and back-end skills.</p>
+                        <div class="project-item">
+                            <strong>
+                                <h3><a href="https://plm-hub-dev.ni.team/" target="_blank" class="linkuri">Hardware
+                                        Service
+                                        Portal for
+                                        Native Instruments</a></h3>
+                            </strong>
+
+
+                            <div class="project-details">
+                                <li> I designed and programmed a homepage for the HW Service Portal which made it easier
+                                    to
+                                    access the right
+                                    service portal for NI products.</li>
+                                <li> It supports the repair process and enhanced customer care by simplifying spare part
+                                    searches for improved
+                                    efficiency.</li>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="project-item">
-                        <strong><a href="https://github.com/Anca0803?tab=repositories" target="_blank"
-                                class="linkuri">GitHub
-                                Repositories</a></strong>
-                        <div class="project-details">
-                            <p>- Open-source contributions focused on automation scripts and web development.</p>
+                        <div class="project-item">
+                            <strong>
+                                <h3><a href="https://codepen.io/Anca0803/pens/public" target="_blank"
+                                        class="linkuri">FreeCodeCamp
+                                        Projects</a></h3>
+                            </strong>
+                            <div class="project-details">
+                                <li> I created web development projects showcasing front-end and back-end skills.</li>
+                            </div>
                         </div>
-                    </div>
+
+                        <div class="project-item">
+                            <strong>
+                                <h3><a href="https://github.com/Anca0803?tab=repositories" target="_blank"
+                                        class="linkuri">GitHub
+                                        Repositories</a></h3>
+                            </strong>
+                            <div class="project-details">
+                                <li>Open-source contributions focused on automation scripts and web development.</li>
+                            </div>
+                        </div>
 
 
-                    </li>
-                    </ul>
+                        </li>
+                        </ul>
 
-                    </ul>
+                        </ul>
                 </section>
             </div>
         </div>
