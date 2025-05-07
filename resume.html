@@ -2,15 +2,26 @@
 <html lang="en">
 
 <head>
-    <title>About Me</title>
+    <title>Resume</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/mobile.css" media="screen and (max-width: 768px)">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+
+
+    <button class="toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
     <style>
         /* Background Image with semi-transparent overlay */
         body {
             position: relative;
-            background: url('images/flori-verzi.jpg') no-repeat center center fixed;
+            background: url('/images/flori-verzi.jpg') no-repeat center center fixed;
             background-size: cover;
             margin: 0;
             font-family: 'Arial', sans-serif;
@@ -88,7 +99,7 @@
 
         #sidebar nav ul li a {
             display: block;
-            padding: 12px 20px;
+            padding: 10px 10px;
             color: rgb(255, 255, 255);
             text-decoration: none;
             font-size: 18px;
@@ -101,27 +112,31 @@
 
         #sidebar .icons {
             position: absolute;
-            bottom: 20px;
-            left: 20px;
+            up: 30px;
+            bottom: 2px;
+            /*aici 19.02.25*/
+            left: 15px;
+            /*aici 19.02.25*/
             list-style-type: none;
             padding: 0;
+            justify-content: center !important;
+            align-items: center !important;
         }
 
         #sidebar .icons li {
             display: inline;
-            margin-right: 10px;
+            margin-right: 5px;
         }
 
-        #sidebar .icons li a {
+        #sidebar li a {
             color: rgb(218, 220, 229);
-            font-size: 24px;
+            font-size: 20px;
             text-decoration: none;
         }
 
-
         /* Background Image */
         body {
-            background: url('images/flori-verzi.jpg') no-repeat center center fixed;
+            background: url('/images/flori-verzi.jpg') no-repeat center center fixed;
 
             background-size: cover;
             /* Ensures the image fills the entire screen */
@@ -144,29 +159,10 @@
             position: relative;
         }
 
-        /* Fixed Title Section */
-        .fixed-title {
-            position: fixed;
-            top: 0;
-            left: 300px;
-            /* Matches the sidebar offset */
-            width: 100%;
-            /* Matches the width used by the content container */
-            max-width: 900px;
-            /* Maximum width to align with the experience box */
-            background-color: #ffffff !important;
-            padding: 10px 20px;
-            z-index: 1100;
-            box-shadow: 0 4px 10px rgba(8, 212, 93, 0.1);
-            border-bottom: 1px solid #ddd;
-            font-size: 1.8rem;
-            font-weight: bold;
-            color: #123000;
-            border-radius: 8px;
-        }
+
 
         .content-container {
-            margin-top: 80px;
+            margin-top: 10px;
             max-width: 900px;
             width: 100%;
             background: #fff;
@@ -180,7 +176,7 @@
         h4 {
             margin-top: 20px;
             margin-bottom: 20px;
-            color: #333;
+            color: #042e16;
         }
 
         ul {
@@ -218,8 +214,10 @@
                     <li><a href="about_me.html">About me</a></li>
                     <li><a href="resume.html">Resume</a></li>
                     <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="certificates.html">Certificates</a></li>
                     <li><a href="views.html" <span class="counter-number">Loading...</span>Live Views</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+
 
 
                 </ul>
@@ -256,17 +254,19 @@
                             departments,
                             improving
                             team efficiency by 60%.</li>
-                        <li>I designed and programmed a <a href="https://plm-hub-dev.ni.team/" target="_blank"
-                                class="linkuri">homepage</a> for the HW Service Portal, making it easier to
+                        <li>I designed and launched a <a href="https://plm-hub-dev.ni.team/" target="_blank"
+                                class="linkuri">homepage</a> for the Hardware Service Portal, making it easier to
                             access the
                             right service portal for NI products, supporting the repair process, enhancing
                             customer
-                            care, and simplifying spare part searches.</li>
+                            care, and simplifying spare part searches by 40%.</li>
                         <li>Automated executive reports and stock management, reducing manual tasks by 30% and
                             increasing the precision of forecasting.</li>
-                        <li>Automated critical processes, including executive reports and stock management,
-                            leading to a
-                            30% reduction in time spent on manual tasks and improving accuracy in forecasting.
+                        <li>Automation of dealers’ sell through reports to be uploaded into Qlik Sense, optimizing our
+                            financial process by 60%.</li>
+                        <li>Improved OEM and customer service satisfaction from 70% to 95% with real-time delivery and
+                            proactive support.</li>
+                        <li>Project manager: transition retail software distribution from B2B Magento Shop to XChange.
                         </li>
                         <li>Implement automation for demand planning, price setup, competitors’ prices and
                             campaign
@@ -313,7 +313,8 @@
                             interest and long-term connection with the brand.</li>
                     </ul>
 
-                    <h4>Retail Sales Consultant - Romanian Commercial Bank (Erste Group) (01/2010 – 01/2011)
+                    <h4><strong>Retail Sales Consultant - Romanian Commercial Bank (Erste Group) (01/2010 –
+                            01/2011)</strong>
                     </h4>
                     <ul>
                         <li>Consistently exceeded sales targets, achieving 120% of goals for 5 consecutive
@@ -331,10 +332,10 @@
 
                     <h3><strong>Education</strong></h3>
                     <ul>
-                        <li>Master of Business Administration – Alexandru Ioan Cuza University, Iași</li>
-                        <li>Bachelor's in Banking, Corporate Finance – Alexandru Ioan Cuza University, Iași</li>
-                        <li>Master's in Management and Marketing in Tourism – Academy of Economic Studies,
-                            Bucharest
+                        <li>Master’s degree in Finance and Banking, University Alexandru Ioan Cuza University,Iasi</li>
+                        <li>Master's degree in Management and Marketing in Tourism, The Academy of Economic Studies,
+                            Bucharest</li>
+                        <li>Bachelor's degree, Banking and Finance, University Alexandru Ioan Cuza University, Iasi
                         </li>
                     </ul>
 
@@ -342,20 +343,22 @@
                     <ul>
                         <li>AWS Solution Architect Training – <a href="https://learn.cantrill.io" target="_blank"
                                 class="linkuri">Cantrill.io</a> (actively studying)</li>
-                        <li>Completed Certifications and Master degrees can be found <a href="#">here</a></li>
+                        <li>Completed Certifications and Master degrees can be found <a href="certificates.html"
+                                target="_blank" class="linkuri">here</a>
+                        </li>
                     </ul>
 
                     <h3><strong>Skills</strong></h3>
-                    <h4>Cloud and DevOps Technologies</h4>
+                    <h4><strong>Cloud and DevOps Technologies</strong></h4>
                     <ul>
-                        <li>AWS (main focus)</li>
+                        <li>AWS S3, EC2, RDS, IAM, Lambda </li>
                         <li>Azure</li>
                         <li>Google Cloud</li>
                         <li>Kubernetes</li>
                         <li>Docker</li>
                     </ul>
 
-                    <h4>Web Development</h4>
+                    <h4><strong>Web Development</strong></h4>
                     <ul>
                         <li>Python</li>
                         <li>Bash</li>
@@ -366,29 +369,32 @@
                         <li>Django</li>
                     </ul>
 
-                    <h4>Operating Systems and Networking</h4>
+                    <h4><strong>Operating Systems and Networking</strong></h4>
                     <ul>
                         <li>Linux</li>
                         <li>Networking</li>
 
                     </ul>
-                    <h4>Tools and Platforms</h4>
+                    <h4><strong>Tools and Platforms</strong></h4>
                     <ul>
                         <li>Google Sheets expert</li>
+                        <li>Automation</li>
                         <li>Microsoft Office</li>
                         <li>Confluence</li>
                         <li>SDBS</li>
                         <li>Zendesk</li>
                         <li>Oracle EBS</li>
                         <li>Zendesk</li>
-                        <li>QlikView/QlikSense</li>
+                        <li>QlikSense</li>
                         <li>Fidelio</li>
-                        <li>Michelin Softwares</li>
+                        <li>Michelin Software</li>
                         <li>IDL</li>
                     </ul>
-                    <h4>Soft Skills</h4>
+                    <h4><strong>Soft Skills</strong></h4>
                     <ul>
                         <li>Customer service</li>
+                        <li>Consulting</li>
+                        <li>Sales</li>
                         <li>Problem solving</li>
                         <li>Analytical thinking</li>
                         <li>Time management</li>
@@ -396,7 +402,7 @@
                         <li>Strong communication</li>
                         <li>Teamwork</li>
                         <li>Active listening</li>
-                        <li>Leadership</li>
+                        <li>Project Coordination</li>
                         <li>Empathy</li>
 
                     </ul>
