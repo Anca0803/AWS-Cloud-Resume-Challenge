@@ -1,45 +1,4 @@
 
-/* asta e dela chatgpt 
-const lambdaUrl = "https://lbw5aegjmrqaji7sjcckuss5e40rjdal.lambda-url.us-east-1.on.aws/";
-
-// Fetch the views count from Lambda
-fetch(`${lambdaUrl}?timestamp=${Date.now()}`)
-    .then(response => {
-        if (!response.ok) {
-            throw new Error(`HTTP error! Status: ${response.status}`);
-        }
-        return response.json();
-    })
-    .then(data => {
-        console.log("Fetched data:", data);  // Debug log to check the response
-
-        // Find the element and update the text with the views count
-        const counterElement = document.querySelector(".counter-number");
-        if (counterElement) {
-            counterElement.textContent = data.views;
-        } else {
-            console.error("Counter element not found!");
-        }
-    })
-    .catch(error => {
-        console.error("Error fetching views:", error);
-    }) */
-
-
-// JavaScript Code
-/*
-const counter = document.querySelector(".counter-number");
-
-async function updateCounter() {
-    let response = await fetch("https://ofpyzegslzvpj7lh77f5mz4bf40cawvv.lambda-url.us-east-1.on.aws/");
-    let data = await response.json();
-    counter.innerHTML = `Live Views: ${data}`;
-}
-
-updateCounter(); */
-
-
-/*chatgpt*/
 
 const counters = document.querySelectorAll(".counter-number");
 
