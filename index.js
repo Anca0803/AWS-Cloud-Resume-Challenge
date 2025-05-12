@@ -1,4 +1,5 @@
 
+
 const counters = document.querySelectorAll(".counter-number");
 
 async function updateCounter() {
@@ -54,3 +55,8 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log("Sidebar class:", sidebar.className); // Debugging
     });
 })
+
+
+
+
+
