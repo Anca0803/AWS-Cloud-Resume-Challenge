@@ -182,6 +182,7 @@ body {
 }
 
 
+
 @media screen and (max-width: 480px) {
 
   html,
@@ -232,7 +233,7 @@ textarea {
   line-height: 1.65;
 }
 
-@media screen and (max-width: 1680px) {
+/*@media screen and (max-width: 1680px) {
 
   body,
   input,
@@ -260,7 +261,7 @@ textarea {
   textarea {
     font-size: 9pt;
   }
-}
+}*/
 
 #sidebar nav ul li a {
   border-bottom: none;
@@ -398,7 +399,8 @@ h3 {
 }
 
 h4 {
-  font-size: 1.1em;
+  font-size: 1em;
+  font-weight: bold !important;
 }
 
 h5 {
@@ -409,7 +411,7 @@ h6 {
   font-size: 0.7em;
 }
 
-@media screen and (max-width: 1680px) {
+/*@media screen and (max-width: 1680px) {
   h1 {
     font-size: 3.4em;
   }
@@ -495,7 +497,7 @@ hr.major {
 
 .align-right {
   text-align: right;
-}
+}*/
 
 /* Row */
 .row {
@@ -755,7 +757,7 @@ hr.major {
 
 
 
-@media screen and (max-width: 1680px) {
+/*@media screen and (max-width: 1680px) {
   .row {
     display: flex;
     flex-wrap: wrap;
@@ -1968,7 +1970,7 @@ hr.major {
   .row.gtr-200.gtr-uniform>* {
     padding-top: 3em;
   }
-}
+}/*
 
 /* Section/Article */
 section.special,
@@ -2475,7 +2477,7 @@ ul.icons li .icon {
 }
 
 ul.icons li .icon:before {
-  font-size: 1.25em;
+  font-size: 1.85em;
 }
 
 /* Contact */
@@ -2584,7 +2586,7 @@ ul.pagination li:last-child {
   padding-left: 0.75em;
 }
 
-@media screen and (max-width: 480px) {
+/*@media screen and (max-width: 480px) {
   ul.pagination li:nth-child(n+2):nth-last-child(n+2) {
     display: none;
   }
@@ -2592,7 +2594,7 @@ ul.pagination li:last-child {
   ul.pagination li:first-child {
     padding-right: 0;
   }
-}
+}/*
 
 /* Table */
 .table-wrapper {
@@ -2918,7 +2920,7 @@ button:disabled,
   margin-bottom: 0;
 }
 
-@media screen and (max-width: 980px) {
+/*@media screen and (max-width: 980px) {
   .features {
     margin: 0 0 2em 0;
     width: 100%;
@@ -2997,7 +2999,7 @@ button:disabled,
   .features article .icon:before {
     font-size: 1.25rem;
   }
-}
+}/*
 
 /* Posts */
 .posts {
@@ -3063,7 +3065,7 @@ button:disabled,
   width: 100%;
 }
 
-@media screen and (min-width: 1681px) {
+/*@media screen and (min-width: 1681px) {
   .posts article:nth-child(3n + 1):before {
     display: none;
   }
@@ -3178,7 +3180,7 @@ button:disabled,
   .posts article:last-child:after {
     display: none;
   }
-}
+}/*
 
 /* Wrapper */
 #wrapper {
@@ -3221,7 +3223,7 @@ button:disabled,
   border-top: 0 !important;
 }
 
-@media screen and (max-width: 1680px) {
+/*@media screen and (max-width: 1680px) {
   #main>.inner {
     padding: 0 5em 0.1em 5em;
   }
@@ -3253,11 +3255,13 @@ button:disabled,
 
 #main {
   margin-left: 10px;
-  /* Adjusted to reduce the left offset */
-  padding: 20px 20px 20px 40px;
-  /* Extra padding on the left */
-  min-height: 100vh;
+  /* Adjusted to reduce the left offset
+padding: 20px 20px 20px 40px;
+/* Extra padding on the left *
+min-height: 100vh;
 }
+
+*/
 
 /* Sidebar */
 #search form {
@@ -3386,7 +3390,7 @@ button:disabled,
   font-variant: normal;
   text-rendering: auto;
   line-height: 1;
-  text-transform: none !important;
+  text-transform: none;
   font-family: 'Font Awesome 5 Free';
   font-weight: 900;
 }
@@ -3445,7 +3449,28 @@ button:disabled,
   }
 }
 
-@media screen and (max-width: 1280px) {
+.fixed-title {
+  position: fixed;
+  top: 0;
+  left: 300px;
+  /* Matches the sidebar offset */
+  width: 100%;
+  /* Matches the width used by the content container */
+  max-width: 900px;
+  /* Maximum width to align with the experience box */
+  background-color: #ffffff !important;
+  padding: 10px 20px;
+  z-index: 1100;
+  box-shadow: 0 4px 10px rgba(8, 212, 93, 0.1);
+  border-bottom: 1px solid #ddd;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #123000;
+  border-radius: 8px;
+}
+
+
+/*@media screen and (max-width: 1280px) {
   #sidebar {
     box-shadow: 0 0 5em 0 rgb(255, 255, 255);
     height: 100%;
@@ -3515,7 +3540,7 @@ button:disabled,
     top: 1em;
     width: 5em;
   }
-}
+}/*
 
 /* Header */
 #header {
@@ -3559,10 +3584,10 @@ button:disabled,
     padding-top: 6.5em;
   }
 
-  #header .logo {
+  /* #header .logo {
     font-size: 1.25em;
     margin-left: 4em;
-  }
+  }*/
 
   #header .icons {
     height: 5em;
