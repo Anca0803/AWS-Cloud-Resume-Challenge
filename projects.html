@@ -4,11 +4,13 @@
 <head>
     <title>Projects</title>
     <meta charset="utf-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/mobile.css" media="screen and (max-width: 768px)">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/main.css?v=42">
 
+    <link rel="stylesheet" href="assets/css/mobile.css?v=99" media="screen and (max-width: 768px)">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 
 
 
@@ -196,23 +198,18 @@
             </header>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about_me.html">About me</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <!-- <li><a href="projects.html">Projects</a></li>-->
-                    <li>
-                        <a href="projects.html">Projects</a>
+
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about_me.html">About me</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="certificates.html">Certificates</a></li>
+                        <li><a href="views.html" <span class="counter-number">Loading...</span>Live Views</a></li>
+                        <li><a href="contact.html">Contact</a></li>
 
 
-                    </li>
-
-
-                    <li><a href="certificates.html">Certificates</a></li>
-                    <li><a href="views.html" <span class="counter-number">Loading...</span>Live Views</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-
-
-                </ul>
+                    </ul>
             </nav>
 
 
@@ -225,8 +222,8 @@
             <ul class="icons">
                 <li><a href="https://www.linkedin.com/in/anca-irimia-8343b083/" target="_blank"
                         class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-                <li><a href="https://github.com/Anca0803" target="_blank" class="icon brands fa-github"><span
-                            class="label">GitHub</span></a></li>
+                <li><a href="https://github.com/Anca0803?tab=repositories" target="_blank"
+                        class="icon brands fa-github"><span class="label">GitHub</span></a></li>
                 <li><a href="mailto:anca.irimia8@gmail.com" class="icon solid fa-envelope"><span
                             class="label">Email</span></a></li>
             </ul>
@@ -253,6 +250,15 @@
                                 resume hosted on AWS.</li>
                             <li>This project integrates both frontend and backend services,
                                 showcasing Infrastructure as Code (IaC), automation, and cloud-native development.</li>
+                            <li>Architecture Diagram:</li>
+
+                            <div class="diagram-container">
+                                <img class="diagram-img" src="images\Cloud_Resume_Challenge.png"
+                                    alt="Architecture Diagram" style="width: 400px">
+                            </div>
+                            <li><a href="https://github.com/Anca0803/AWS-Cloud-Resume-Challenge/tree/master"
+                                    target="_blank" class="linkuri"> Github repository</a></li>
+
 
 
                         </ul>
@@ -282,70 +288,120 @@
                     <div class="project-item">
                         <strong>
                             <h3> <a href="quotes.html" target="_blank" class="linkuri">
-                                    Deploying a Serverless AWS Application </a>
+                                    Serverless Quote Generator on AWS</a>
                             </h3>
                         </strong>
                         <div class="project-details">
-                            <li>Designed and configured a DynamoDB table with partition/sort keys, auto-scaling, and
-                                encryption.</li>
-                            <li> Developed two AWS Lambda functions to handle quote creation and retrieval,
-                                with IAM roles and environment variables.</li>
-                            <li>Integrated Lambda with Amazon API Gateway, creating RESTful endpoints.</li>
-                            <li>Deployed and tested a serverless API using CloudWatch logging, X-Ray tracing, and
-                                dynamic quote delivery via the invoke URL.</li>
-                            <li><a href="https://github.com/Anca0803/Deploying-a-Serverless-AWS-Application"
-                                    target="_blank" class="linkuri"> Github repository</a></li>
+                            <ul>
+                                <li>Designed and configured a DynamoDB table with partition/sort keys, auto-scaling, and
+                                    encryption.</li>
+                                <li> Developed two AWS Lambda functions to handle quote creation and retrieval,
+                                    with IAM roles and environment variables.</li>
+                                <li>Integrated Lambda with Amazon API Gateway, creating RESTful endpoints.</li>
+                                <li>Deployed and tested a serverless API using CloudWatch logging, X-Ray tracing, and
+                                    dynamic quote delivery via the invoke URL.</li>
+                                <li>Architecture Diagram:</li>
 
+                                <div class="diagram-container">
+                                    <img class="diagram-img" src="images\QuotesDiagram.png" alt="Architecture Diagram"
+                                        style="width: 400px">
+                                </div>
+                                <li><a href="https://github.com/Anca0803/Deploying-a-Serverless-AWS-Application"
+                                        target="_blank" class="linkuri"> Github repository</a></li>
 
+                            </ul>
                         </div>
 
                         <div class="project-item">
                             <strong>
-                                <h3><a href="https://plm-hub-dev.ni.team/" target="_blank" class="linkuri">Hardware
-                                        Service
-                                        Portal for
-                                        Native Instruments</a></h3>
-                            </strong>
-
-
-                            <div class="project-details">
-                                <li> I designed and programmed a homepage for the HW Service Portal which made it easier
-                                    to
-                                    access the right
-                                    service portal for NI products.</li>
-                                <li> It supports the repair process and enhanced customer care by simplifying spare part
-                                    searches for improved
-                                    efficiency.</li>
-                            </div>
-                        </div>
-
-                        <div class="project-item">
-                            <strong>
-                                <h3><a href="https://codepen.io/Anca0803/pens/public" target="_blank"
-                                        class="linkuri">FreeCodeCamp
-                                        Projects</a></h3>
+                                <h3> AWS ALB – EC2 Web Servers in a Custom VPC</a>
+                                </h3>
                             </strong>
                             <div class="project-details">
-                                <li> I created web development projects showcasing front-end and back-end skills.</li>
+                                <ul>
+
+                                    <li>I set up a custom VPC with public subnets and routing to host a scalable web
+                                        app.</li>
+                                    <li>Launched two EC2 instances in 2 different Availability Zones and installed
+                                        Apache with a simple script.</li>
+                                    <li>I connected everything through an Application Load Balancer to distribute
+                                        traffic evenly.</li>
+                                    <li>Accessing the ALB shows how requests switch between the two servers—just
+                                        like in a real-world setup.</li>
+
+                                    <li>Architecture Diagram:</li>
+
+                                    <div class="diagram-container">
+                                        <img class="diagram-img" src="images\AWS_ALB.png" alt="Architecture Diagram"
+                                            style="width: 400px">
+                                    </div>
+
+                                    <li><a href="https://github.com/Anca0803/AWS-Application-Load-Balancer-Project-EC2-Web-Servers-in-a-Custom-VPC"
+                                            target="_blank" class="linkuri"> Github repository</a></li>
+
+                                </ul>
                             </div>
-                        </div>
 
-                        <div class="project-item">
-                            <strong>
-                                <h3><a href="https://github.com/Anca0803?tab=repositories" target="_blank"
-                                        class="linkuri">GitHub
-                                        Repositories</a></h3>
-                            </strong>
-                            <div class="project-details">
-                                <li>Open-source contributions focused on automation scripts and web development.</li>
+                            <div class="project-item">
+                                <strong>
+                                    <h3><a href="https://plm-hub-dev.ni.team/" target="_blank" class="linkuri">Hardware
+                                            Service
+                                            Portal for
+                                            Native Instruments</a></h3>
+                                </strong>
+
+
+                                <div class="project-details">
+                                    <ul>
+                                        <li> I designed and programmed a homepage for the HW Service Portal which made
+                                            it
+                                            easier
+                                            to
+                                            access the right
+                                            service portal for NI products.</li>
+                                        <li> It supports the repair process and enhanced customer care by simplifying
+                                            spare
+                                            part
+                                            searches for improved
+                                            efficiency.</li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
+
+                            <div class="project-item">
+                                <strong>
+                                    <h3><a href="https://codepen.io/Anca0803/pens/public" target="_blank"
+                                            class="linkuri">FreeCodeCamp
+                                            Projects</a></h3>
+                                </strong>
+                                <div class="project-details">
+                                    <ul>
+                                        <li> I created web development projects showcasing front-end and back-end
+                                            skills.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="project-item">
+                                <strong>
+                                    <h3><a href="https://github.com/Anca0803?tab=repositories" target="_blank"
+                                            class="linkuri">GitHub
+                                            Repositories</a></h3>
+                                </strong>
+                                <div class="project-details">
+                                    <ul>
+                                        <li>Open-source contributions focused on automation scripts and web development.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
 
 
-                        </li>
-                        </ul>
+                            </li>
+                            </ul>
 
-                        </ul>
+                            </ul>
                 </section>
             </div>
         </div>
@@ -354,8 +410,8 @@
     <script src="assets/js/browser.min.js"></script>
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script src="/index.js"></script>
+    <script src="assets/js/main.js?v=999"></script>
+    <script src="/index.js?v=999"></script>
 </body>
 
 </html>
