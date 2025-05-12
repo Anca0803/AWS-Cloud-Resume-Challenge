@@ -1,0 +1,415 @@
+/* General Mobile Styles */
+@media screen and (max-width: 768px) {
+    .main-title {
+
+        font-size: 1.5rem !important;
+        font-family: Georgia, serif !important;
+        color: #053205;
+        text-align: center;
+        padding-left: 20px;
+        margin-bottom: 15px;
+
+        letter-spacing: 0.4px;
+        line-height: 1.2;
+
+
+    }
+
+    .subtitle {
+        font-family: Georgia, serif;
+        /*font-family: 'Cormorant Garamond', arial;*/
+        font-size: 0.75rem !important;
+        color: #053205;
+        font-weight: 500;
+        margin-top: 70px;
+        letter-spacing: 0.4px;
+        margin-left: 0;
+        /*font-family: 'Lucida Calligraphy', cursive;*/
+    }
+
+    /* Ensure the sidebar is smaller */
+    #sidebar {
+        width: 180px !important;
+        /* Reduce width for better fit */
+        padding-top: 10px !important;
+        position: fixed;
+        left: -10px;
+        /* Initially hidden */
+        height: 100%;
+        background: #033B00;
+        /* Darker green */
+        transition: left 0.3s ease-in-out;
+        z-index: 10;
+        text-align: center;
+    }
+
+    /* Show sidebar when active */
+    #sidebar.active {
+        left: 0;
+    }
+
+    /* Sidebar menu items */
+    #sidebar nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    #sidebar nav ul li {
+        padding: 1px;
+        text-align: center;
+    }
+
+    /* Reduce menu text size */
+    #sidebar nav ul li a {
+        color: rgb(255, 255, 255);
+        font-size: 10px;
+        /* Reduce text size */
+        text-decoration: none;
+        display: block;
+    }
+
+    /* Adjust Menu Title (Make It Smaller & Aligned) */
+    #sidebar .logo strong {
+        display: block;
+        font-size: 20px;
+        /* Reduce size */
+        /*text-align: center;*/
+        margin-bottom: 5px;
+        margin-left: 1em;
+    }
+
+    ul.icons li .icon:before {
+        font-size: 1.2em;
+    }
+
+    /* Ensure icons stay in one row */
+    /* Ensure icons stay in one row */
+    #sidebar .social-icons {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 8px !important;
+        /* Adjust spacing between icons */
+        padding: 5px 0 !important;
+        flex-wrap: nowrap !important;
+        /* Prevents icons from wrapping */
+    }
+
+    #sidebar .social-icons img {
+        width: 24px !important;
+        /* Adjust size if needed */
+        height: 84px !important;
+        margin: 0 !important;
+        /* Remove extra spacing */
+    }
+
+    #main {
+        margin-left: 1px !important;
+        padding: 5px !important;
+        min-height: 100vh;
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+    #sidebar .toggle {
+        position: absolute !important;
+        top: 50% !important;
+        /* Aligns vertically in the middle of the fixed title */
+        left: 15px !important;
+        /* Aligns to the left */
+        transform: translateY(-50%) !important;
+        /* Centers it perfectly */
+        width: 50px !important;
+        height: 40px !important;
+        background: transparent !important;
+        border: none !important;
+        z-index: 1002 !important;
+        /* Ensure it appears on top */
+        cursor: pointer !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: space-around !important;
+        align-items: center !important;
+        padding: 5px !important;
+    }
+
+    /* Three horizontal white lines */
+    #sidebar .toggle span {
+        display: block !important;
+        width: 35px !important;
+        height: 5px !important;
+        background-color: white !important;
+        border-radius: 2px !important;
+        transition: all 0.3s ease-in-out !important;
+    }
+
+
+}
+
+.diagram-container {
+    max-width: 100%;
+    overflow-x: hidden;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.diagram-img {
+    max-width: 100% !important;
+    height: auto !important;
+    display: block;
+    margin: 0 auto;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    /* Ensure the fixed title stays in place */
+    .fixed-title {
+        position: fixed !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        height: 60px !important;
+        /* Adjust if needed */
+        background: rgba(10, 64, 41, 0.9) !important;
+        /* Adjust color if needed */
+        color: white !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        font-size: 24px !important;
+        z-index: 1001 !important;
+        /* Ensure it's above everything */
+    }
+
+    @media screen and (max-width: 768px) {
+
+        /* Toggle button inside the fixed title (left corner) */
+        .toggle {
+            position: fixed !important;
+            top: 3% !important;
+            left: 15px !important;
+            transform: translateY(-50%) !important;
+            width: 50px !important;
+            height: 40px !important;
+            background: transparent !important;
+            border: none !important;
+            outline: none !important;
+            box-shadow: none !important;
+            z-index: 1002 !important;
+            cursor: pointer !important;
+            display: flex !important;
+            flex-direction: column !important;
+            justify-content: space-around !important;
+            align-items: center !important;
+            padding: 5px !important;
+        }
+
+        /* Remove focus outline when clicked */
+        .toggle:focus {
+            outline: none !important;
+            box-shadow: none !important;
+        }
+
+        /* Ensure no unwanted border appears */
+        .toggle:active,
+        .toggle:visited {
+            border: none !important;
+            outline: none !important;
+            box-shadow: none !important;
+        }
+
+        /* Three white horizontal lines */
+        .toggle span {
+            display: block !important;
+            width: 35px !important;
+            height: 5px !important;
+            background-color: white !important;
+            border-radius: 2px !important;
+            transition: all 0.3s ease-in-out !important;
+        }
+
+        /* Toggle animation when active 
+        .toggle.active span:nth-child(1) {
+            transform: translateY(10px) rotate(45deg) !important;
+        }
+
+        .toggle.active span:nth-child(2) {
+            opacity: 0 !important;
+        }
+
+        .toggle.active span:nth-child(3) {
+            transform: translateY(-10px) rotate(-45deg) !important;
+        }
+    } */
+        @media screen and (max-width: 768px) {
+
+            /* Sidebar starts hidden */
+            #sidebar {
+                position: fixed !important;
+                left: -250px !important;
+                /* Off-screen */
+                top: 0 !important;
+                width: 150px !important;
+                height: 100% !important;
+                background-color: rgb(2, 57, 22) !important;
+                color: white !important;
+                transition: left 0.3s ease-in-out !important;
+                z-index: 1000 !important;
+
+            }
+
+            /* Sidebar appears when active */
+            #sidebar.active {
+                left: 0 !important;
+                /* Bring sidebar into view */
+            }
+        }
+
+
+
+
+
+
+
+
+        /*
+
+    #sidebar .toggle {
+        position: fixed;
+        top: 55px;
+        left: 15px;
+        width: 40px;
+        height: 30px;
+        background: rgb(10, 64, 41);
+        border-radius: 10px;
+        z-index: 1001;
+        cursor: pointer;
+    }
+
+    /* Make the toggle appear as three dots (⋮) 
+    #sidebar .toggle::before {
+
+        font-size: 20px;
+        color: rgb(83, 86, 83);
+        display: block;
+        text-align: center;
+    }  */
+
+
+        @media screen and (max-width: 768px) {
+
+            /* Resize the button */
+            @media screen and (max-width: 768px) {
+
+                /* Override ALL conflicting button styles */
+                .actions li a.button.big,
+                .button.big {
+                    width: 100% !important;
+                    max-width: 300px !important;
+                    font-size: 60% !important;
+                    padding: 15px 15px !important;
+                    display: flex !important;
+                    justify-content: center !important;
+                    align-items: center !important;
+                    text-align: center !important;
+                    margin: 25px auto !important;
+                    border-radius: 6px !important;
+                }
+
+                /* Prevent <li> from stretching button */
+                .actions li {
+                    display: flex !important;
+                    justify-content: center !important;
+                }
+            }
+
+
+
+            /* Make paragraph text smaller on mobile */
+            p,
+            li,
+            h1,
+            h2,
+            h3,
+            h4 {
+                font-size: 0.7em !important;
+                /* Reduce font size */
+                line-height: 1.4 !important;
+                /* Improve readability */
+            }
+        }
+
+        .linkuri {
+            font-size: 12px;
+            /* Reduce font size */
+
+            /* Improve readability */
+        }
+    }
+
+
+
+
+
+
+
+
+    /* Adjust title size & alignment */
+    .fixed-title {
+        width: 100% !important;
+        max-width: 500px;
+        left: 50% !important;
+        transform: translateX(-50%);
+        font-size: 1.2rem;
+        /* Reduce title size */
+        text-align: center;
+        padding: 10px 15px !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+
+    .content-container {
+        width: 100%;
+        margin-top: 30px !important;
+
+    }
+}
+
+
+
+
+
+/* @media screen and (max-width: 480px) {
+
+            /* Make everything even smaller on very small screens 
+            #sidebar {
+                width: 140px !important;
+                /*aici am modificat eu
+                ;
+                left: -110p;
+                ;
+            }
+
+            #sidebar nav ul li a {
+                font-size: 15px !important;
+                ;
+            }
+
+            .fixed-title {
+                font-size: 1rem;
+                width: 90%;
+                ;
+            }
+
+            .content-container {
+                width: 100% !important;
+                ;
+                font-size: 0.8rem;
+            }
+        } */
