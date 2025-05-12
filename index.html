@@ -4,30 +4,46 @@
 <head>
 
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
 
     <title>Anca Irimia</title>
 
-
-
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/main.css?v=42">
+    <link rel="stylesheet" href="assets/css/mobile.css?v=99" media="screen and (max-width: 768px)">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-
+    <button class="toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
 
 
 
 
 
     <style>
+        @media screen and (min-width: 900px) {
+            #main {
+                margin-top: -130px !important;
+                /* Move content up on desktops */
+            }
+        }
+
+
+
+
         /* Background Image with semi-transparent overlay */
         body {
             position: relative;
-            background: url('images/flori-verzi.jpg') no-repeat center center fixed;
+            background: url('/images/flori-verzi.jpg') no-repeat center center fixed;
             background-size: cover;
             margin: 0;
             font-family: 'Arial', sans-serif;
-            color: #333;
+            color: #062206;
         }
 
         body::before {
@@ -101,7 +117,7 @@
 
         #sidebar nav ul li a {
             display: block;
-            padding: 12px 20px;
+            padding: 10px 10px;
             color: rgb(255, 255, 255);
             text-decoration: none;
             font-size: 18px;
@@ -114,30 +130,30 @@
 
         #sidebar .icons {
             position: absolute;
-            bottom: 20px;
-            left: 20px;
+            up: 30px;
+
+            bottom: 2px;
+            /*aici 19.02.25*/
+            left: 15px;
+            /*aici 19.02.25*/
+
             list-style-type: none;
             padding: 0;
+            justify-content: center !important;
+            align-items: center !important;
         }
 
         #sidebar .icons li {
             display: inline;
-            margin-right: 10px;
+            margin-right: 5px;
         }
 
-        #sidebar .icons li a {
+        #sidebar li a {
             color: rgb(218, 220, 229);
-            font-size: 24px;
+            font-size: 20px;
             text-decoration: none;
         }
 
-
-        /* Main Content Styles */
-        #main {
-            margin - left: 260px;
-            padding: 20px;
-            min-height: 100vh;
-        }
 
 
 
@@ -169,28 +185,7 @@
             margin-top: 20px;
         }
 
-        /* Responsive Layout for Smaller Screens */
-        @media (max-width: 768px) {
-            #sidebar {
-                position: relative;
-                width: 100%;
-                height: auto;
-            }
 
-            #sidebar nav ul li a {
-                padding: 8px;
-                font-size: 10px;
-            }
-
-            #main {
-                margin - left: 0;
-                margin-top: 20px;
-            }
-
-            #banner img {
-                height: auto;
-            }
-        }
 
         <style>
         /* Elegant Fonts
@@ -260,8 +255,9 @@
                         <li><a href="about_me.html">About me</a></li>
                         <li><a href="resume.html">Resume</a></li>
                         <li><a href="projects.html">Projects</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="certificates.html">Certificates</a></li>
                         <li><a href="views.html" <span class="counter-number">Loading...</span>Live Views</a></li>
+                        <li><a href="contact.html">Contact</a></li>
 
 
                     </ul>
@@ -270,8 +266,8 @@
                 <ul class="icons">
                     <li><a href="https://www.linkedin.com/in/anca-irimia-8343b083/" target="_blank"
                             class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-                    <li><a href="https://github.com/Anca0803" target="_blank" class="icon brands fa-github"><span
-                                class="label">GitHub</span></a></li>
+                    <li><a href="https://github.com/Anca0803?tab=repositories" target="_blank"
+                            class="icon brands fa-github"><span class="label">GitHub</span></a></li>
                     <li><a href="mailto:anca.irimia8@gmail.com" class="icon solid fa-envelope"><span
                                 class="label">Email</span></a></li>
                 </ul>
@@ -349,7 +345,7 @@
                 /* Extra padding for lower placement */
 
                 /* Apply the same background as body */
-                background: url('images/flori-verzi.jpg') no-repeat center center fixed;
+                background: url('/images/flori-verzi.jpg') no-repeat center center fixed;
                 background-size: cover;
 
                 /* Same transparency overlay effect */
@@ -392,18 +388,11 @@
         <script src="assets/js/browser.min.js"></script>
         <script src="assets/js/breakpoints.min.js"></script>
         <script src="assets/js/util.js"></script>
-        <script src="assets/js/main.js"></script>
-        <script src="/index.js"></script>
+        <script src="assets/js/main.js?v=999"></script>
+        <script src="/index.js?v=999"></script>
 
 
 
 
 
     </body>
-
-
-    <<<<<<< HEAD:AWS_Cloud_Resume/Anca Irimia Cloud Resume Challenge/index.html </html>
-        =======
-
-</html>
->>>>>>> f4fe2df (Updated CI/CD workflow YAML file):index.html
