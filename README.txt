@@ -11,3 +11,7 @@ AWS Lambda – serverless backend to handle requests and update visitor count.
 Amazon DynamoDB – NoSQL database for storing visitor metrics.
 IAM Roles & Policies – applied least-privilege permissions for security.
 Terraform – defined and provisioned AWS infrastructure in a declarative, repeatable manner.
+
+Architecture Diagram:
+
+
