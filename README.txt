@@ -23,3 +23,4 @@ Terraform – defined and provisioned AWS infrastructure in a declarative, repea
 Architecture Diagram:
 
 https://github.com/Anca0803/AWS-Cloud-Resume-Challenge/blob/master/images/Cloud_Resume_Challenge.png
+
